@@ -43,7 +43,6 @@
 
 @media all and (min-width: 600px) {
   .aside { flex: 1 auto; }
-
 }
 @media all and (min-width: 800px) {
   .main    { flex: 3 0px; }
@@ -51,5 +50,31 @@
   .main    { order: 2; }
   .aside-2 { order: 3; }
   .footer  { order: 4; }
-    .wrapper2 {flex-direction: column;}
+  .wrapper2 {flex-direction: column;}
+}
+
+@media all and (max-width: 800px) {
+  footer {
+     position:fixed;
+     left:0px;
+     bottom:0px;
+     height:30px;
+     width:100%;
+     background:#999;
+  }
+  * html footer {
+     position:absolute;
+  }
+  header {
+     position:fixed;
+     left:0px;
+     top: 0px;
+     /*bottom:100px;*/
+     height:30px;
+     width:100%;
+     background:#999;
+  }
+  * html header {
+     position:absolute;
+  }
 }
