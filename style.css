@@ -1,0 +1,25 @@
+.header {
+  background: tomato;
+}
+.footer {
+  background: lightgreen;
+}
+.main {
+  text-align: left;
+  background: deepskyblue;
+}
+.aside-1 {
+  background: gold;
+}
+.aside-2 {
+  background: hotpink;
+}
+img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 50%;
+}
+
+/*body {
+  padding: 2em;
+}*/
