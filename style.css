@@ -1,6 +1,5 @@
 body {
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
+  margin-top: 30px;
 }
 
 .header {
@@ -32,12 +31,13 @@ body {
   background: #38546D;
   color: white;
   text-align: center;
+  border-radius: 3px;
 }
 button {
   background-color: #38546D;
   color: white;
   border: 2px solid black;
-  margin-top: 1em;
+  margin-top: 10em;
 }
 /*color pallette
 #38546D
