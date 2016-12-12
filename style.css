@@ -1,18 +1,23 @@
+body {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
 .header {
-  background: tomato;
+  background: #2783AA;
 }
 .footer {
-  background: lightgreen;
+  background: #2783AA;
 }
 .main {
   text-align: left;
-  background: deepskyblue;
+  background: #4BC2F4;
 }
 .aside-1 {
-  background: gold;
+  background: #C3DDF2;
 }
 .aside-2 {
-  background: hotpink;
+  background: #9CDAF4;
 }
 #me {
    max-width: 100%;
@@ -24,14 +29,23 @@
   width:25%;
 }
 .highlighter {
-  background: blue;
+  background: #38546D;
+  color: white;
   text-align: center;
 }
 button {
-  background-color: blue;
+  background-color: #38546D;
+  color: white;
+  border: 2px solid black;
   margin-top: 1em;
 }
-
+/*color pallette
+#38546D
+#C3DDF2
+#9CDAF4
+#4BC2F4
+#2783AA
+*/
 
 /*body {
   padding: 2em;
