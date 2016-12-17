@@ -31,9 +31,6 @@ html, body {
 
 .moon {
   font-size: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   left: 50%;
   bottom: 100px;
@@ -55,7 +52,7 @@ html, body {
 /* Animation Setup */
 .layer {
   position: absolute;
-  bottom: 0;
+  bottom: 10em;
   -webkit-animation: 10s linear infinite alternate;
           animation: 10s linear infinite alternate;
 }
@@ -254,7 +251,19 @@ html, body {
 .hills div {
   position: absolute;
 }
-
+.l0 .hills div {
+  bottom: -320px;
+  width: 500px;
+  height: 500px;
+  background: #162636;
+}
+.l00 .hills div {
+  left: 500px;
+  bottom: -320px;
+  width: 500px;
+  height: 500px;
+  background: #162636;
+}
 .l1 .hills div {
   bottom: -350px;
   width: 500px;
@@ -346,12 +355,14 @@ body {
 
 #clouds{
 	padding: 100px 0;
-	background: #c9dbe9;
-	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: tomato;
+
 	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
 	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
   background-image: url(http://images.clipartpanda.com/sun-rays-background-rays.png);
-  background-position: center;
+  background-position: bottom;
+  background-size: cover;
+
 }
 
 /*Time to finalise the cloud shape*/

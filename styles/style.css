@@ -20,7 +20,13 @@ body {
 .aside-2 {
   background: #9CDAF4;
 }
-
+a {
+  background:-ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  background-color: #38546D;
+  color: white;
+  border: 1px solid white;
+}
 button {
   background:-ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
   background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
@@ -28,7 +34,7 @@ button {
   color: white;
   border: 1px solid white;
 }
-button:hover{
+a:hover{
   background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
 	background:-moz-linear-gradient(top, #280655 5%, #2dabf9 100%);
 	background:-webkit-linear-gradient(top, #280655 5%, #2dabf9 100%);
