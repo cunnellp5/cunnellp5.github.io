@@ -256,6 +256,11 @@ html, body {
   width: 500px;
   height: 500px;
   background: #162636;
+  background-image:
+  radial-gradient(
+    #162636 70%,
+    white
+  );
 }
 .l00 .hills div {
   left: 500px;
@@ -263,20 +268,65 @@ html, body {
   width: 500px;
   height: 500px;
   background: #162636;
+
 }
 .l1 .hills div {
   bottom: -350px;
   width: 500px;
-  height: 500px;
+  height: 450px;
   background: #20374f;
+  background-image:
+  radial-gradient(
+    #20374f 85%,
+    white
+  );
+
 }
 
 .l2 .hills div {
   bottom: -400px;
   width: 500px;
-  height: 500px;
+  height: 400px;
   background: #274461;
+  background-image:
+  radial-gradient(
+    #274461 90%,
+    white
+  );
+
 }
+.l0 .hills div:nth-child(1) {
+  left: -100px;
+}
+
+.l0 .hills div:nth-child(2) {
+  left: 250px;
+}
+
+.l0 .hills div:nth-child(3) {
+  left: 650px;
+}
+
+.l0 .hills div:nth-child(4) {
+  left: 1050px;
+}
+
+.l0 .hills div:nth-child(5) {
+  left: 1450px;
+}
+
+.l0 .hills div:nth-child(6) {
+  left: 1850px;
+}
+
+.l0 .hills div:nth-child(7) {
+  left: 2250px;
+}
+
+.l0 .hills div:nth-child(8) {
+  left: 2650px;
+}
+
 
 .l1 .hills div:nth-child(1) {
   left: -200px;
