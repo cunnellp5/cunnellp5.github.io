@@ -1,4 +1,12 @@
+html {
+  background-color: #fcfcfc;
+}
 body{
   padding-left: 8em;
   padding-right: 8em;
+}
+
+.nav {
+  box-shadow: 1px 0px 20px  black;
+  border: 1px solid black;
 }
