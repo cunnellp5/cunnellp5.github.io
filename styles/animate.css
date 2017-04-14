@@ -288,11 +288,11 @@ html, body {
   width: 500px;
   height: 400px;
   background: #274461;
-  background-image:
+  /*background-image:
   radial-gradient(
     #274461 90%,
     white
-  );
+  );*/
 
 }
 .l0 .hills div:nth-child(1) {
