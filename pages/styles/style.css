@@ -17,7 +17,11 @@ body{
 .hoverMe:hover {
   opacity: 1;
   transition: 1000ms;
-  /*border-radius: 50%;*/   
+  /*border-radius: 50%;*/
   /*-webkit-transition: opacity 2s;*/
   /*-webkit-transition: border-radius 1s;/*/
+}
+#flower{
+  overflow: scroll;
+  height: 44em;
 }
