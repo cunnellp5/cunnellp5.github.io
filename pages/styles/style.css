@@ -27,6 +27,9 @@ body{
   transition: opacity .2s, visibility .2s, 1.5s;
   padding: 1em;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .wrap:hover .reveal {
   visibility: visible;
