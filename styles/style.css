@@ -22,6 +22,15 @@ body {
   margin: 2.5rem;
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 80%;
+}
+
 /* Typography */
 span {
   white-space: nowrap;

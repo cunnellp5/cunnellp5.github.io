@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/button.css" />
+    <link rel="stylesheet" href="./styles/rainbowbar.css" />
+    <link rel="stylesheet" href="./styles/rolodex.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Gasoek One"
       rel="stylesheet"
@@ -15,58 +19,91 @@
     <title>Philip Cunnell</title>
   </head>
   <body>
-    <div class="rainbow">
-      <div class="rainbow-progress"></div>
-    </div>
-    <nav>
-      <div>
-        <a class="socials" href="https://github.com/cunnellp5">Github</a>
-        <span>|</span>
-        <a class="socials" href="https://www.linkedin.com/in/philip-cunnell/">
-          Linkedin
+    <header>
+      <div class="rainbow">
+        <div class="rainbow-progress"></div>
+      </div>
+      <nav>
+        <div>
+          <a class="socials" href="https://github.com/cunnellp5" title="Github"
+            >Github</a
+          >
+          <span>|</span>
+          <a
+            class="socials"
+            href="https://www.linkedin.com/in/philip-cunnell/"
+            title="LinkedIn"
+            >Linkedin</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <p class="name">Philip Cunnell</p>
+        <div class="subtext rolodex">
+          <div class="rolodex">
+            <ul class="roll-one">
+              <li>Full-Snack</li>
+              <li>Full-Stack</li>
+              <ul class="roll-two">
+                <li>Web Developer</li>
+                <li>Engineer</li>
+                <li>Software</li>
+                <ul class="roll-three">
+                  <li>Technician</li>
+                  <li>Architect</li>
+                </ul>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <span class="rotater">
+        <a class="btn button" href="./PDFs/PhilipCunnellResume.pdf" download>
+          <span>Download Resume</span>
         </a>
-      </div>
-    </nav>
-    <article>
-      <p class="name">Philip Cunnell</p>
-      <p class="subtext">Full Stack Web Developer</p>
-    </article>
-    <span class="rotater">
-      <a class="btn button" href="./PDFs/PhilipCunnellResume.pdf" download>
-        <span>Download Resume</span>
-      </a>
-    </span>
-
-    <article class="about">
-      <div class="command-res-wrapper">
-        <p><strong>&#x24;</strong> whoami</p>
-        <p class="describe"><strong>&#8250;</strong> philc</p>
-      </div>
-      <div class="command-res-wrapper">
-        <div><strong>&#x24;</strong> philc --about</div>
-        <p class="describe about-text">
-          <strong>&#8250;</strong> In 2016, I embarked on a journey that saw me
-          transition from a truck driving beer courier to a proficient Frontend
-          Developer within the span of a year. Since then, I've been
-          passionately working towards mastering the craft of Full Stack
-          Development, leaving my mark on the frontend and backend of multiple
-          companies along the way.
-        </p>
-      </div>
-      <div class="command-res-wrapper">
-        <div><strong>&#x24;</strong> which philc</div>
-        <p class="describe">
-          <strong>&#8250;</strong> I enjoy working through full stack side
-          projects
-          <br />
-          <strong>&#8250;</strong> Practicing coding GLSL art projects via
-          shadertoy and touchdesigner
-          <br />
-          <strong>&#8250;</strong> Skateboard regularly
-          <br />
-          <strong>&#8250;</strong> 🐱 My Cat's name is Lily
-        </p>
-      </div>
-    </article>
+      </span>
+      <article class="about">
+        <div class="command-res-wrapper">
+          <p><strong>&#x24;</strong> whoami</p>
+          <p class="describe"><strong>&#8250;</strong> philc</p>
+        </div>
+        <div class="command-res-wrapper">
+          <div><strong>&#x24;</strong> philc --about</div>
+          <p class="describe about-text">
+            <strong>&#8250;</strong>
+            In 2016, I made a career leap from a truck driving beer courier to a
+            Frontend Developer within a year. Since then, I've been diving
+            headfirst into the world of Full-Stack Development, playing a key
+            role in shaping the frontend and backend of multiple companies. It's
+            been quite the journey from trucker caps to coding wraps, and I'm
+            all in for the next leg of this digital road trip!
+          </p>
+        </div>
+        <div class="command-res-wrapper">
+          <div><strong>&#x24;</strong> npm run prod-philc --a --describe</div>
+          <p class="describe describe-which-list">
+            <strong>&#8250;</strong> Full-Stack side projects fuel my creativity
+            <br />
+            <strong>&#8250;</strong> Coding GLSL art projects is my digital
+            canvas
+            <br />
+            <strong>&#8250;</strong> Skateboarding keeps me grounded and active
+            <br />
+            <strong>&#8250;</strong> Unfortunate Jeep XJ Cherokee owner
+            <br />
+            <strong>&#8250;</strong> Lily is my cat 🐱
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <p>&copy; <span id="year"></span> Philip Cunnell</p>
+    </footer>
   </body>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </html>
