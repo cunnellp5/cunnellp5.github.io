@@ -1,9 +1,7 @@
-# Personal website
+# Philip Cunnell
 
-> tbd
+> [philcunnell.dev](www.philcunnell.dev)
 
-### Links
-
-[Github](https://github.com/cunnellp5) |
+🔗 [Github](https://github.com/cunnellp5) |
 [LinkedIn](https://www.linkedin.com/in/philip-cunnell/) |
 [CodePen](http://codepen.io/philipcunnell/)
