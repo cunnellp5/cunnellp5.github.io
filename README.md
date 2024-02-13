@@ -1,13 +1,9 @@
-# My personal website! Making use of a bulma css framework and vanilla html.
+# Personal website
 
-#### Github:
-https://github.com/cunnellp5
+> tbd
 
-#### Linkedin:
-https://www.linkedin.com/in/philip-cunnell/
+### Links
 
-#### CodePen:
-http://codepen.io/philipcunnell/
-
-#### Email:
-philip.cunnell@colorado.edu
+[Github](https://github.com/cunnellp5) |
+[LinkedIn](https://www.linkedin.com/in/philip-cunnell/) |
+[CodePen](http://codepen.io/philipcunnell/)
