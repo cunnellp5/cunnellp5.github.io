@@ -1,34 +1,40 @@
 /* Variables */
 :root {
-  --main-yellow-color: #a6870b;
-  --main-grey-color: #4a4a4a;
   --highligh-grey-color: #8f8f8f;
+  --main-grey-color: #4a4a4a;
+  --main-yellow-color: #a6870b;
 }
 
 /* Global Styles */
 html {
-  background: #111;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  background: #111;
   font-family: 'Montserrat', sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
 body {
+  box-sizing: border-box;
   color: var(--main-grey-color);
+  display: flex;
+  flex-direction: column;
   font-weight: 500;
   line-height: 1.5;
+  margin: 2.5rem 2.5rem 0 2.5rem;
+  min-height: calc(100vh - 2.5rem);
   padding: 0 10rem;
-  margin: 2.5rem;
 }
 
 footer {
-  position: fixed;
-  left: 0;
+  background: #111;
   bottom: 0;
-  width: 100%;
+  font-size: 70%;
+  left: 0;
+  margin-top: auto;
+  padding: 3px;
   text-align: center;
-  font-size: 80%;
+  width: 100%;
 }
 
 /* Typography */
@@ -37,21 +43,21 @@ span {
 }
 
 .name {
-  font-feature-settings: unset;
-  font-family: 'Gasoek One';
-  font-size: 8vw;
   color: var(--highligh-grey-color);
+  font-family: 'Gasoek One';
+  font-feature-settings: unset;
+  font-size: 8vw;
 }
 
 .subtext {
-  font-size: 1.5rem;
-  font-weight: bold;
-  transform: rotate(4deg);
-  position: absolute;
-  top: 48px;
-  right: 210px;
   color: var(--main-yellow-color);
+  font-size: 1.5rem;
   font-variant: small-caps;
+  font-weight: bold;
+  position: absolute;
+  right: 210px;
+  top: 48px;
+  transform: rotate(4deg);
 }
 
 /* Layout Styles */
@@ -62,8 +68,8 @@ article {
 .wrapper {
   display: flex;
   flex-direction: column;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .rotater {
@@ -110,13 +116,30 @@ article {
   .name {
     font-size: 10vw;
   }
-  .btn {
-    padding: 0.8em 1.25rem;
-    font-size: 0.8rem;
-  }
   .subtext {
     font-size: 0.8rem;
     font-weight: unset;
     right: 60px;
+    position: unset;
+    transform: unset;
+  }
+  /* .describe {
+  } */
+}
+
+@media (max-width: 500px) {
+  .command-res-wrapper {
+    font-size: 85%;
+  }
+  .btn {
+    padding: 0.8em 1.25rem;
+    font-size: 0.8rem;
+  }
+  article {
+    margin-bottom: 1.5rem;
+  }
+
+  .about {
+    padding-top: 2.5rem;
   }
 }
