@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --highligh-grey-color: #8f8f8f;
+  --highligh-grey-color: #ababab;
   --main-grey-color: #4a4a4a;
   --main-yellow-color: #a6870b;
 }
@@ -93,9 +93,12 @@ article {
 }
 
 .describe {
-  color: var(--highligh-grey-color);
+  color: #cdee69;
   margin: 6px 12px;
-  font-size: 85%;
+}
+
+.response2 {
+  color: #e09690;
 }
 
 .describe-which-list {
