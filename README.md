@@ -12,5 +12,13 @@
 
 ### Todo
 
-- [ ] Refactor to use React
+- [ ] Render human.txt file
+- [ ] Refactor to use React/nextjs
+- [ ] Use Framer Motion
+- [ ] experiment with three-stdlib
 - [ ] Add backend DB and schemes for new layout
+
+misc
+
+- https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API
+- https://remix.run/
