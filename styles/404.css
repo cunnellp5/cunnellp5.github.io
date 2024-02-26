@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+#controls {
+  margin: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 {
+  color: #161616;
+  font-family: 'Gasoek One';
+  font-feature-settings: unset;
+  font-size: 48vw;
+  mix-blend-mode: difference;
+  user-select: none;
+}

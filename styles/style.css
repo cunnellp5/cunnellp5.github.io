@@ -29,12 +29,20 @@ body {
 footer {
   background: #111;
   bottom: 0;
-  font-size: 70%;
+  font-size: 90%;
   left: 0;
   margin-top: auto;
-  padding: 3px;
+  padding: 9px 0;
   text-align: center;
   width: 100%;
+}
+
+.footer-link {
+  color: unset;
+}
+
+.footer-link:hover {
+  color: var(--main-yellow-color);
 }
 
 /* Typography */
