@@ -2,6 +2,7 @@
 .rolodex {
   height: 2em;
   overflow: hidden;
+  user-select: none;
 }
 
 /* Rolodex Text */

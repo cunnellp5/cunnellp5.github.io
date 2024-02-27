@@ -49,12 +49,12 @@ footer {
 span {
   white-space: nowrap;
 }
-
 .name {
   color: var(--highligh-grey-color);
   font-family: 'Gasoek One';
   font-feature-settings: unset;
-  font-size: 8vw;
+  font-size: 4vw;
+  user-select: none;
 }
 
 .subtext {
