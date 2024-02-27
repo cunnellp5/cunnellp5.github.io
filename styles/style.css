@@ -119,6 +119,16 @@ article {
   padding-top: 5rem;
 }
 
+.beat-link {
+  color: var(--main-yellow-color);
+  /* font-weight: bold; */
+  text-decoration: none;
+
+  &:hover {
+    color: #cdee69;
+  }
+}
+
 /* Media Queries */
 @media (max-width: 1225px) {
   body {
