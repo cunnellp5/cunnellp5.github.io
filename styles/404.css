@@ -15,7 +15,6 @@ canvas {
 }
 
 #controls {
-  margin: 20px;
   position: absolute;
   top: 0;
   left: 0;
@@ -31,10 +30,23 @@ canvas {
 }
 
 h1 {
-  color: #161616;
-  font-family: 'Gasoek One';
+  position: absolute;
+  color: #acacac;
+  font-family: 'Gasoek One' monospace;
   font-feature-settings: unset;
-  font-size: 48vw;
+  font-size: 50vw;
   mix-blend-mode: difference;
+  user-select: none;
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 80px 0;
+  bottom: 0;
+  color: white;
+  font-size: 1.5rem;
   user-select: none;
 }
