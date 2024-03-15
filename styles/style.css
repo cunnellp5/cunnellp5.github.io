@@ -3,6 +3,8 @@
   --highligh-grey-color: #ababab;
   --main-grey-color: #4a4a4a;
   --main-yellow-color: #a6870b;
+  --link-yellow-color: #765c00;
+  --paragraph-color: #ae9c6b;
 }
 
 /* Global Styles */
@@ -14,6 +16,19 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+h3 {
+  color: var(--main-yellow-color);
+  margin-bottom: 8px;
+}
+
+strong {
+  color: var(--main-yellow-color);
+}
+
+sup {
+  color: var(--link-yellow-color);
+}
+
 body {
   box-sizing: border-box;
   color: var(--main-grey-color);
@@ -23,7 +38,7 @@ body {
   line-height: 1.5;
   margin: 2.5rem 2.5rem 0 2.5rem;
   min-height: calc(100vh - 2.5rem);
-  padding: 0 10rem;
+  padding: 0 25rem;
 }
 
 footer {
@@ -35,6 +50,57 @@ footer {
   padding: 9px 0;
   text-align: center;
   width: 100%;
+}
+
+hr {
+  margin: 16px 0;
+  border: none;
+  border-top: 1px solid var(--link-yellow-color);
+  opacity: 0.3;
+  /* width: 50%; */
+}
+
+a {
+  text-decoration: none;
+}
+
+.bio > p {
+  color: var(--paragraph-color);
+}
+
+.links-container {
+  width: 20%;
+}
+
+.links-container-mobile {
+  display: none;
+}
+
+.links-container-mobile > .links {
+  margin: 20px 0;
+}
+
+.links {
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-between;
+  margin: 8px 0;
+  color: var(--main-yellow-color);
+}
+
+.links > p {
+  margin-right: 20px;
+}
+
+.links > a {
+  color: var(--link-yellow-color);
+  text-decoration: none;
+}
+
+.links > a:hover {
+  /* display: inline-block; */
+  text-decoration: line-through;
+  transform: scale(1.1);
 }
 
 .footer-link {
@@ -55,17 +121,21 @@ span {
   font-feature-settings: unset;
   font-size: 4vw;
   user-select: none;
+  white-space: nowrap;
 }
 
 .subtext {
   color: var(--main-yellow-color);
-  font-size: 1.5rem;
   font-variant: small-caps;
   font-weight: bold;
   position: absolute;
-  right: 210px;
   top: 48px;
   transform: rotate(4deg);
+
+  font-size: 0.8rem;
+  right: 60px;
+  position: unset;
+  transform: unset;
 }
 
 /* Layout Styles */
@@ -137,15 +207,6 @@ article {
   .name {
     font-size: 10vw;
   }
-  .subtext {
-    font-size: 0.8rem;
-    font-weight: unset;
-    right: 60px;
-    position: unset;
-    transform: unset;
-  }
-  /* .describe {
-  } */
 }
 
 @media (max-width: 500px) {
@@ -155,12 +216,26 @@ article {
   .btn {
     padding: 0.8em 1.25rem;
     font-size: 0.8rem;
+    display: block;
   }
+
+  .rotater {
+    transform: rotate(0deg);
+    width: 80%;
+  }
+
   article {
     margin-bottom: 1.5rem;
   }
 
   .about {
     padding-top: 2.5rem;
+  }
+  .links-container {
+    display: none;
+  }
+
+  .links-container-mobile {
+    display: block;
   }
 }
