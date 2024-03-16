@@ -18,7 +18,7 @@ html {
 
 h3 {
   color: var(--main-yellow-color);
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 strong {
@@ -27,6 +27,8 @@ strong {
 
 sup {
   color: var(--link-yellow-color);
+  vertical-align: bottom;
+  margin: 0 8px;
 }
 
 body {
@@ -39,6 +41,7 @@ body {
   margin: 2.5rem 2.5rem 0 2.5rem;
   min-height: calc(100vh - 2.5rem);
   padding: 0 25rem;
+  /* min-width: 1500px; */
 }
 
 footer {
@@ -64,8 +67,20 @@ a {
   text-decoration: none;
 }
 
+.languagesAndTools > a:hover {
+  display: inline-block;
+  transform: scale(1.2);
+}
+
 .bio > p {
   color: var(--paragraph-color);
+  margin: 5px 0;
+  white-space: nowrap;
+}
+
+small {
+  margin: 0 5px;
+  color: var(--main-grey-color);
 }
 
 .links-container {
@@ -199,6 +214,10 @@ article {
   }
 }
 
+.bio-icon {
+  font-size: 80%;
+}
+
 /* Media Queries */
 @media (max-width: 1225px) {
   body {
@@ -238,4 +257,13 @@ article {
   .links-container-mobile {
     display: block;
   }
+
+  .bio {
+    overflow: scroll;
+  }
+}
+
+/* becasue i might like these later */
+.bio-icon {
+  display: none;
 }
