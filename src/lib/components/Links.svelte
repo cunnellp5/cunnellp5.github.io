@@ -1,6 +1,7 @@
 <article>
     <p>
         <a
+          class="animations"
           target="_blank"
           rel="noopener"
           href="https://animations.philcunnell.dev"
@@ -90,10 +91,14 @@
 </article>
 
 <style>
+    ul {
+      padding: unset;
+    }
     li {
+        display: flex;
+        justify-content: space-between;
         list-style: none;
-        margin: 0.5rem;
-        text-align: left;
+        margin: 0.8rem;
     }
     a {
         text-decoration: none;
@@ -106,6 +111,13 @@
         text-decoration: line-through;
     }
     span {
-        margin-right: 0.5rem;
+        margin-right: 0.8rem;
+    }
+
+    .animations {
+      display: inline-block;
+      background-color: #f0eac4;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
     }
 </style>
