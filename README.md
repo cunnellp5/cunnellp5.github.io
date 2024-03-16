@@ -1,24 +1,13 @@
 # Philip Cunnell
 
-> [philcunnell.dev](www.philcunnell.dev)
+WIP - refactoring to use sveltekit
 
-🔗 [Github](https://github.com/cunnellp5) |
-[LinkedIn](https://www.linkedin.com/in/philip-cunnell/) |
-[CodePen](http://codepen.io/philipcunnell/)
-
-### Built with:
-
-- Static html and css
-
-### Todo
-
-- [ ] Render human.txt file
-- [ ] Refactor to use React/nextjs
-- [ ] Use Framer Motion
-- [ ] experiment with three-stdlib
-- [ ] Add backend DB and schemes for new layout
-
-misc
-
-- https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API
-- https://remix.run/
+- 💻 [Website](philcunnell.dev)
+- 👾 [Github](github.com/cunnellp5)
+- 📄 [LinkedIn](www.linkedin.com/in/philip-cunnell/)
+- 🥷 [Codewars](www.codewars.com/users/cunnellp5)
+- 👹 [Exercism](exercism.org/profiles/cunnellp5)
+- 👾 [Shaders](www.shadertoy.com/user/pcunnell)
+- 🖊️ [Codepen](codepen.io/philipcunnell)
+- 🎶 [FreshCombo](freshcombomusic.com/)
+- 🎧 [Soundcloud](soundcloud.com/freshcombo)
