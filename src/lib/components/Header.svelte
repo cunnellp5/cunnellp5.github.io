@@ -13,9 +13,9 @@
         <li>
             <a href="{base}/about">About</a>
         </li>
-        <li>
+        <!-- <li>
             <a href="{base}/contact">Contact</a>
-        </li>
+        </li> -->
         <!-- <li>
             <a href="{base}/rss.xml" target="_blank">RSS</a>
         </li> -->
