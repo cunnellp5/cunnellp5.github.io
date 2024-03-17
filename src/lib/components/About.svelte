@@ -12,12 +12,14 @@
                     <span> - {descriptor}</span>
                 </small>
             </p>
-            <p class="describe">
-                {description}
-            </p>
-            {#if languages}
-                <small class="languages">{languages.join(' - ')}</small>
-            {/if}
+            <div class="bottomParts">
+                <p class="describe">
+                    {description}
+                </p>
+                {#if languages}
+                    <small class="languages">{languages.join(' - ')}</small>
+                {/if}
+            </div>
         </div>
     {/each}
 </article>
@@ -45,10 +47,17 @@
     }
 
     .service {
-        color: var(--text-2)
+        color: var(--text-2);
     }
 
     .lifeChunks {
-        line-height: 1.2;
+        line-height: 1.3;
+        /* display: grid; */
+    }
+
+    .bottomParts {
+        display: grid;
+        gap: var(--size-2);
+        white-space: nowrap;;
     }
 </style>

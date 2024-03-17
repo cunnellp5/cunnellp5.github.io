@@ -9,7 +9,7 @@
         {title}.
         <a target="_blank" rel="noopener" href="humans.txt" class="footer-link">
             Created with
-            <SkullIcon />
+            <SkullIcon size=16/>
         </a>
     </p>
 </footer>
@@ -24,6 +24,7 @@
 
     p {
         color: var(--text-2);
+        font-size: 12px;
     }
 
     a {

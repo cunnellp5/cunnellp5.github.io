@@ -4,11 +4,12 @@
 
 <article>
   <header>
+    <h1 class="header-text">I'm Phil</h1>
     <div class="clipper">
       <img src="/images/phil-mosh2.gif" alt="Philip Cunnell">
     </div>
-    <h1>I'm Phil</h1>
   </header>
+
   <main>
     <Links></Links>
   </main>
@@ -41,5 +42,11 @@
   main {
       display: grid;
       place-content: center;
+  }
+
+  @media (max-width: 768px) {
+      h1 {
+         display: none;
+      }
   }
 </style>

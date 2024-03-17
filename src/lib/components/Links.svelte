@@ -3,7 +3,7 @@
 </script>
 
 <article>
-  <ul>
+  <ul class="desktop">
     {#each linkData as { icon, description, url, display }}
       <li>
         <span>{icon} {description}</span>
@@ -12,6 +12,19 @@
           rel="noopener"
           href={url}>
           {display}
+        </a>
+      </li>
+    {/each}
+  </ul>
+  <ul class="mobile">
+    {#each linkData as { icon, description, url, display }}
+      <li >
+        <span>{icon}</span>
+        <a
+          target="_blank"
+          rel="noopener"
+          href={url}>
+          {description}
         </a>
       </li>
     {/each}
@@ -44,5 +57,27 @@
   
     span {
         margin-inline: var(--size-7);
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      li {
+        justify-content: unset;
+      }
+
+      span {
+        margin-inline: var(--size-2);
+      }
+
+      .desktop {
+        display: none;
+      }
+
+      .mobile {
+        display: block;
+      }
     }
 </style>

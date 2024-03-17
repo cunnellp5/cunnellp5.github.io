@@ -4,13 +4,13 @@
 </script>
  
 <nav>
-    <a class="title" href="{base}/">
+    <a href="{base}/">
         <b>&lt;Phil Cunnell /&gt;</b>
     </a>
-    
+
     <ul class="links">
         <li>
-            <a href="{base}/about">ABOUT</a>
+            <a href="{base}/about">About</a>
         </li>
         <!-- <li>
             <a href="{base}/contact">Contact</a>
@@ -26,13 +26,13 @@
         padding-block: var(--size-7);
     }
 
-    .links {
-        margin-block: var(--size-7);
-    }
-
     a {
         color: inherit;
         text-decoration: none;
+    }
+
+    .links {
+        margin-block: var(--size-7);
     }
 
     @media (min-width: 768px) {
