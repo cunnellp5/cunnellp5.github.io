@@ -17,7 +17,10 @@
 - TypeScript
 - html
 - css
+
   - [open-props](https://open-props.style/)
+
+- photomosh
 
 ### HOW TO GET SVELTKIT DEPLOYED IN GITHUB PAGES [THIS IS DUMB]
 

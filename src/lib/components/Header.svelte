@@ -5,12 +5,12 @@
  
 <nav>
     <a class="title" href="{base}/">
-        <b>&lt;PC /&gt;</b>
+        <b>&lt;Phil Cunnell /&gt;</b>
     </a>
     
     <ul class="links">
         <li>
-            <a href="{base}/about">About</a>
+            <a href="{base}/about">ABOUT</a>
         </li>
         <!-- <li>
             <a href="{base}/contact">Contact</a>
@@ -24,9 +24,6 @@
 <style>
     nav {
         padding-block: var(--size-7);
-        /* background-image: var(--gradient-3), var(--noise-2);
-        filter: var(--noise-filter-1);
-        background-size: cover; */
     }
 
     .links {

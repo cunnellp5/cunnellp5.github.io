@@ -5,7 +5,7 @@
 <article>
   <header>
     <div class="clipper">
-      <img src="/images/phil-mosh.gif" alt="Philip Cunnell">
+      <img src="/images/phil-mosh2.gif" alt="Philip Cunnell">
     </div>
     <h1>I'm Phil</h1>
   </header>
@@ -24,7 +24,6 @@
   }
 
   .clipper {
-      clip-path: polygon(0% 35%, 100% 35%, 100% 65%, 0% 65%);
       width: 120px;
       height: 120px;
       border-radius: 50%;
