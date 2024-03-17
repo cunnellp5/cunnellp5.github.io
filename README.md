@@ -24,11 +24,10 @@
 #### My problem
 
 1. I can deploy, routes work, pages render, but styles dont
-2. When i get styles working, I cant to a subsequent deployment (styles get taken away)
+2. When i get styles working, I cant run a subsequent deployment (styles get taken away)
+3. despite adding the .nojekyll files to the static directory and at root, its not getting copied
 
-solution with a caveat until further notice:
-
-- manually add the `.nojekyll` to root of `gh-pages` branch after a build/deploy (need to double check if the new build overwrites this file)
+- manually add the `.nojekyll` to root of `gh-pages` branch after a build/deploy
   OR
 - make it apart of one the scripts? [need to test this]
 
