@@ -1,11 +1,10 @@
 <script lang="ts">
     import { base } from '$app/paths';
-    import { title } from '$lib/config';
+    import Toggle from './Toggle.svelte';
 </script>
  
 <nav>
     <a class="title" href="{base}/">
-        <!-- <img src="/images/phil-mosh.gif" alt="Philip Cunnell"> -->
         <b>&lt;PC /&gt;</b>
     </a>
     
@@ -21,7 +20,7 @@
         </li> -->
     </ul>
     
-    <button>Toggle</button>
+    <Toggle />
 </nav>
 
 
