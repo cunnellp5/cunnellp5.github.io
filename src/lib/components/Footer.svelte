@@ -1,14 +1,16 @@
 <script lang="ts">
     import { title } from '$lib/config';
+    import { SkullIcon } from 'lucide-svelte';
 </script>
 
 <footer>
     <p>
         &copy; <span id="year">{new Date().getFullYear()}</span>
         {title}.
-        <a target="_blank" rel="noopener" href="humans.txt" class="footer-link"
-            >Created with love</a
-        >
+        <a target="_blank" rel="noopener" href="humans.txt" class="footer-link">
+            Created with
+            <SkullIcon />
+        </a>
     </p>
 </footer>
 
@@ -22,5 +24,9 @@
 
     p {
         color: var(--text-2);
+    }
+
+    a {
+        display: inline-flex;
     }
 </style>

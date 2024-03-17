@@ -3,7 +3,7 @@
 </script>
 
 <article>
-    <h1>About</h1>
+    <h1>Coding history</h1>
     <About></About>
 </article>
 
@@ -11,5 +11,9 @@
     article {
         display: grid;
         place-content: center;
+    }
+
+    h1 {
+        font-family: var(--font-mono);
     }
 </style>
