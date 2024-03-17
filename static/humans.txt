@@ -11,24 +11,25 @@ DESIGNER
 Philip Cunnell
 Homemade design & web development
 
-Design tools:
-// WIP
+LINKS
 
 github.com/cunnellp5
+philcunnell.dev
+animations.philcunnell.dev
 
 
 _______________________________________________________________________________
 
 TECHNOLOGY (WIP)
 
+SvelteKit
+TypeScript
 HTML
 CSS
-Vanilla JS
 
 _______________________________________________________________________________
 
 FONTS
 
-Gasoek One
-Montserrat sans-serif
-Ubuntu monospace
+Manrope, sans-serif
+JetBrains Mono, monospace
