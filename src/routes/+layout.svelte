@@ -6,10 +6,15 @@
     import 'open-props/normalize';
     import 'open-props/buttons';
     
+    import '$lib/styles/rainbowbar.css';
     import '$lib/styles/app.css';
 </script>
  
 <div class="layout">
+    <div class="rainbow">
+        <div class="rainbow-progress"></div>
+    </div>
+
     <Header></Header>
 
     <main>
