@@ -1,70 +1,58 @@
 <script lang="ts">
-    import { base } from '$app/paths';
+    import Header from '$lib/components/Header.svelte';
+    import Footer from '$lib/components/Footer.svelte';
+
+    import 'open-props/style';
+    import 'open-props/normalize';
+    import 'open-props/buttons';
+    
+    import '$lib/styles/app.css';
 </script>
  
-<nav>
-    <a href="{base}/">Home</a>
-    <a href="{base}/about">About</a>
-</nav>
-
-<main>
-    <h1>Philip Cunnell</h1>
-    <h2>⚠️ Under Construction</h2>
-    <slot></slot>
-</main>
-
-<footer>
-    <p>
-        &copy; <span id="year"></span>
-        Philip Cunnell.
-        <a target="_blank" rel="noopener" href="humans.txt" class="footer-link"
-            >Created with love</a
-        >
-    </p>
-</footer>
+<div class="layout">
+    <Header></Header>
+    <main>
+        <slot></slot>
+    </main>
+    <h3>⚠️ Under Construction ⚠️</h3>
+    
+    <Footer></Footer>
+</div>
 
 <style>
     /* TODO get Franklin 54 font working */
-    :global(body) {
-        font-family: 'Franklin 54', system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
-        height: 100vh; /* Set the height to 100% of the viewport height */
-        margin: 0; /* Reset default margin */
-        padding: 0; /* Reset default padding */
-        display: flex; /* Make body a flex container */
-        flex-direction: column; /* Arrange children vertically */
-    }
-
-    nav {
-        display: flex;
-        gap: 1rem;
-        padding: 1rem;
-        background-color: rgb(233, 221, 199);
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
+    /* :global(body) { */
+        /* font-family: 'Franklin 54', system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif; */
+        /* height: 100vh; */
+        /* margin: 0; */
+        /* padding: 0; */
+        /* display: flex; */
+        /* flex-direction: column; */
+    /* } */
 
     main {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin: 2rem;
+        margin: 2rem; */
+        padding-block: var(--size-9);
+    }
+    
+    .layout {
+        /* background-image: var(--gradient-1); */
+        height: 100%;
+        max-inline-size: var(--size-xl);
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        margin-inline: auto;
+        padding-inline: var(--size-7);
     }
 
-    footer {
-        display: flex;
-        margin-top: auto;
-        justify-content: center;
-        padding: 9px 0;
-        width: 100%;
-        font-size: 90%;
+    @media (min-width: 1440px) {
+        .layout {
+            padding-inline: 0;
+        }
     }
 </style>

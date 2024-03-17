@@ -8,8 +8,4 @@
 </article>
 
 <style>
-    article {
-        max-width: 550px;
-        text-align: left;
-    }
 </style>

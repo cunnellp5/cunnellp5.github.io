@@ -1,13 +1,11 @@
 <article>
-    <p>
-        <a
-          class="animations"
-          target="_blank"
-          rel="noopener"
-          href="https://animations.philcunnell.dev"
-          >animations.philcunnell.dev</a
-        >
-    </p>
+    <a
+      class="animations"
+      target="_blank"
+      rel="noopener"
+      href="https://animations.philcunnell.dev">
+      animations.philcunnell.dev
+    </a>
     <ul>
       <li>
         <span>👾 Github</span>
@@ -94,30 +92,35 @@
     ul {
       padding: unset;
     }
+
     li {
         display: flex;
         justify-content: space-between;
         list-style: none;
-        margin: 0.8rem;
+        margin: var(--size-2);
     }
+
     a {
         text-decoration: none;
         color: #000;
     }
+
     a:hover {
-        color: rgb(0, 175, 175);
         display: inline-block;
         transform: scale(1.1);
-        text-decoration: line-through;
+        color: var(--indigo-1);
+        text-shadow: 0 0 10px var(--indigo-5), 0 0 25px var(--indigo-7);
     }
+  
     span {
-        margin-right: 0.8rem;
+        margin-inline: var(--size-7);
     }
 
     .animations {
       display: inline-block;
-      background-color: #f0eac4;
-      padding: 0.5rem;
-      border-radius: 0.5rem;
+      background-color: var(--brand);
+      padding-inline: var(--size-7);
+      margin-inline: var(--size-7);
+      border-radius: var(--radius-1);;
     }
 </style>

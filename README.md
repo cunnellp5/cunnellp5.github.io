@@ -13,10 +13,11 @@
 
 ### Technology:
 
-- SvelteKit
+- [SvelteKit](https://kit.svelte.dev/)
 - TypeScript
 - html
 - css
+  - [open-props](https://open-props.style/)
 
 ### HOW TO GET SVELTKIT DEPLOYED IN GITHUB PAGES [THIS IS DUMB]
 

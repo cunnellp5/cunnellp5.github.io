@@ -3,13 +3,18 @@
 </script>
 
 <article>
-  <h2>Home</h2>
+  <div>
+    <h2>Hello world</h2>
+    <img src="/images/phil-mosh.gif" alt="Philip Cunnell">
+  </div>
   <Links></Links>
 </article>
 
 <style>
-      article {
-        max-width: 400px;
-        text-align: left;
+      img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: var(--size-7);
     }
 </style>
