@@ -3,9 +3,13 @@
 </script>
 
 <article>
-    <h2>About</h2>
+    <h1>About</h1>
     <About></About>
 </article>
 
 <style>
+    article {
+        display: grid;
+        place-content: center;
+    }
 </style>

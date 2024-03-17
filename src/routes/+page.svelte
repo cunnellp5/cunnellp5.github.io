@@ -3,18 +3,33 @@
 </script>
 
 <article>
-  <div>
-    <h2>Hello world</h2>
+  <header>
     <img src="/images/phil-mosh.gif" alt="Philip Cunnell">
-  </div>
-  <Links></Links>
+    <h1>I'm Phil</h1>
+  </header>
+  <main>
+    <Links></Links>
+  </main>
 </article>
 
 <style>
-      img {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        margin: var(--size-7);
-    }
+  header {
+      display: grid;
+      grid-template-columns: auto auto;;
+      place-content: center;
+      align-items: center;
+      gap: var(--size-7);  
+  }
+
+  img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: var(--size-7);
+  }
+
+  main {
+      display: grid;
+      place-content: center;
+  }
 </style>

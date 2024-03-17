@@ -22,11 +22,3 @@ export function toggleTheme() {
 export function setTheme(newTheme: Theme) {
 	theme.set(newTheme);
 }
-
-// const preference = window.matchMedia('(prefers-color-scheme: dark)');
-
-// preference.addEventListener('change', (event) => {
-//     const newTheme = event.matches ? 'dark' : 'light';
-
-//     setTheme(newTheme);
-// });

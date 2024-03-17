@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
     import { fly } from 'svelte/transition';
     import { Moon, Sun } from 'lucide-svelte';
     import { theme, toggleTheme } from '$lib/stores/theme';

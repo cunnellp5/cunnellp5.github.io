@@ -13,26 +13,11 @@
 </footer>
 
 <style>
-    /* a {
-        text-decoration: none;
-        color: black;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    } */
-
-    /* footer {
-        display: flex;
-        margin-top: auto;
-        justify-content: center;
-        padding: 9px 0;
-        width: 100%;
-        font-size: 90%;
-    } */
     footer {
         padding-block: var(--size-7);
         border-top: 1px solid var(--border);
+        display: grid;
+        place-content: center;
     }
 
     p {

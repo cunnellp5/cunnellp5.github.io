@@ -7,45 +7,44 @@
     import 'open-props/buttons';
     
     import '$lib/styles/app.css';
+
+    import { AlertTriangle } from 'lucide-svelte';
 </script>
  
 <div class="layout">
     <Header></Header>
+
+    <main class="construction">
+        <AlertTriangle />
+        <h3>Under Construction</h3>
+    </main>
+
     <main>
         <slot></slot>
     </main>
-    <h3>⚠️ Under Construction ⚠️</h3>
     
+
     <Footer></Footer>
 </div>
 
 <style>
-    /* TODO get Franklin 54 font working */
-    /* :global(body) { */
-        /* font-family: 'Franklin 54', system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif; */
-        /* height: 100vh; */
-        /* margin: 0; */
-        /* padding: 0; */
-        /* display: flex; */
-        /* flex-direction: column; */
-    /* } */
-
     main {
-        /* display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin: 2rem; */
         padding-block: var(--size-9);
+    }
+
+    .construction {
+        display: grid;
+        grid-template-columns: auto auto; /* This will create two columns of equal width */
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
     
     .layout {
-        /* background-image: var(--gradient-1); */
         height: 100%;
         max-inline-size: var(--size-xl);
         display: grid;
-        grid-template-rows: auto 1fr auto;
+        grid-template-rows: auto auto 1fr auto; /* rm second auto when removing construcction */
         margin-inline: auto;
         padding-inline: var(--size-7);
     }

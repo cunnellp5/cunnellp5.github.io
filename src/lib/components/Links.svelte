@@ -1,12 +1,14 @@
 <article>
-    <a
-      class="animations"
-      target="_blank"
-      rel="noopener"
-      href="https://animations.philcunnell.dev">
-      animations.philcunnell.dev
-    </a>
-    <ul>
+  <ul>
+    <li>
+      <span>🧶 Animations</span>
+      <a
+        target="_blank"
+        rel="noopener"
+        href="https://animations.philcunnell.dev">
+        animations.philcunnell.dev
+      </a>
+      </li>
       <li>
         <span>👾 Github</span>
         <a
@@ -102,7 +104,7 @@
 
     a {
         text-decoration: none;
-        color: #000;
+        color: (--var-indigo-1);
     }
 
     a:hover {
@@ -114,13 +116,5 @@
   
     span {
         margin-inline: var(--size-7);
-    }
-
-    .animations {
-      display: inline-block;
-      background-color: var(--brand);
-      padding-inline: var(--size-7);
-      margin-inline: var(--size-7);
-      border-radius: var(--radius-1);;
     }
 </style>

@@ -1,52 +1,54 @@
+<script>
+    import { aboutData } from '$lib/const/aboutData';
+</script>
+
 <article class="bio">
-    <p>
-        <span class="bio-icon">📚</span>
-        <small>[2016-2017]</small>
-        Coding begins
-        [Galvanize-G38]
-    </p>
-    <p>
-        <span class="bio-icon">🎬</span>
-        <small>[2017-2019]</small> Started my career in
-        <strong>Angular2+</strong>
-        [Journey Analytics, SaaS]
-    </p>
-    <p>
-        <span class="bio-icon">🎧</span>
-        <small>[2019-2021]</small>
-        SSR
-        <strong>React</strong>
-        with
-        <strong>Next.js</strong>
-        <strong>Python</strong>
-        and
-        <strong>Django</strong>
-        [Music retail, SaaS]
-    </p>
-    <p>
-        <span class="bio-icon">☀️</span><small>[2021-2022]</small> A full-stack mono repo
-        project in <strong>Python</strong> and HTML[Solar, SaaS]
-    </p>
-    <p>
-        <span class="bio-icon">🚘</span>
-        <small>[2022-2024]</small> Full-stack projects in 
-        <strong>Vue</strong> -
-        <strong>React</strong> - 
-        <strong>Nestjs</strong> -
-        <strong>PSQL</strong>
-        [Auto loans]
-    </p>
-    <p>
-        <span class="bio-icon">🛹</span>
-        <small>[2024-Pres]</small>
-        <strong>SvelteKit</strong> -
-        <strong>PSQL</strong> -
-        <strong>Docker</strong>
-    </p>
+    {#each aboutData as { icon, yearSpan, descriptor, description, languages }}
+        <div class="lifeChunks">
+            <p>
+                <span class="bio-icon">{icon}</span>
+                <small class="service">
+                    &nbsp;{yearSpan}
+                    <span> - {descriptor}</span>
+                </small>
+            </p>
+            <p class="describe">
+                {description}
+            </p>
+            {#if languages}
+                <small class="languages">{languages.join(' - ')}</small>
+            {/if}
+        </div>
+    {/each}
 </article>
 
 <style>
-    /* article.bio {
-        max-width: 400px;
-    } */
+    .describe, .languages {
+        margin-inline: var(--size-7);
+    }
+
+    .languages {
+        color: var(--text-2);
+        opacity: .5;
+    }
+
+    .bio {
+        display: grid;
+        gap: var(--size-4);
+        padding: var(--size-7);
+        text-align: left;
+    }
+
+    small{
+        font-family: var(--font-mono);
+        font-size: 70%;
+    }
+
+    .service {
+        color: var(--text-2)
+    }
+
+    .lifeChunks {
+        line-height: 1.2;
+    }
 </style>
