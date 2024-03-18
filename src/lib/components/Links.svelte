@@ -32,6 +32,7 @@
 </article>
 
 <style>
+  
     ul {
       padding: unset;
     }
@@ -53,6 +54,7 @@
         transform: scale(1.1);
         color: var(--indigo-1);
         text-shadow: 0 0 10px var(--indigo-5), 0 0 25px var(--indigo-7);
+        animation: var(--animation-blink);
     }
   
     span {
