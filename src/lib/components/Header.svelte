@@ -12,9 +12,9 @@
         <li>
             <a href="{base}/about">About</a>
         </li>
-        <!-- <li>
+        <li>
             <a href="{base}/contact">Contact</a>
-        </li> -->
+        </li>
     </ul>
     
     <Toggle />

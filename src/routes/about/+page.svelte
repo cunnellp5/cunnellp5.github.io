@@ -6,7 +6,7 @@
 <article>
     <header>
         <h1 class="header-text">About</h1>
-        <GlitchImage url="/images/phil-moshed-4-pixel.gif" />
+        <GlitchImage url="/images/phil-moshed4.gif" />
     </header>
 
     <section>
