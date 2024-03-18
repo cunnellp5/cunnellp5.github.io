@@ -11,10 +11,6 @@
 </script>
  
 <div class="layout">
-    <div class="rainbow">
-        <div class="rainbow-progress"></div>
-    </div>
-
     <Header></Header>
 
     <main>
