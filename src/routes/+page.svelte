@@ -27,7 +27,6 @@
   header {
       display: grid;
       grid-template-columns: auto auto;
-      /* place-content: center; */
       align-items: center;
       padding-bottom: var(--size-9);
       gap: var(--size-8);

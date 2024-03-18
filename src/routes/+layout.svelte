@@ -1,6 +1,7 @@
 <script lang="ts">
     import Header from '$lib/components/Header.svelte';
     import Footer from '$lib/components/Footer.svelte';
+    import PageTransition from '$lib/components/PageTransition.svelte';
 
     import 'open-props/style';
     import 'open-props/normalize';
@@ -8,13 +9,17 @@
     
     import '$lib/styles/rainbowbar.css';
     import '$lib/styles/app.css';
+
+    export let data
 </script>
  
 <div class="layout">
     <Header></Header>
 
     <main>
-        <slot></slot>
+        <PageTransition url={data.url}>
+            <slot></slot>
+        </PageTransition>
     </main>
     
     <Footer></Footer>
