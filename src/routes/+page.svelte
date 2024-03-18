@@ -1,13 +1,12 @@
 <script>
   import Links from '../lib/components/Links.svelte';
+  import GlitchImage from '../lib/components/GlitchImage.svelte';
 </script>
 
 <article>
   <header>
     <h1 class="header-text">I'm Phil</h1>
-    <div class="clipper">
-      <img src="/images/phil-mosh2.gif" alt="Philip Cunnell">
-    </div>
+    <GlitchImage url="/images/phil-mosh2.gif" />
   </header>
 
   <main>
@@ -16,27 +15,22 @@
 </article>
 
 <style>
+  article {
+        display: grid;
+        place-content: center;
+  }
+
+  .header-text {
+      font-family: var(--font-serif);
+  }
+
   header {
       display: grid;
       grid-template-columns: auto auto;
-      place-content: center;
+      /* place-content: center; */
       align-items: center;
-      gap: var(--size-7);  
-  }
-
-  .clipper {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      overflow: hidden;
-  }
-
-  img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: relative;
-      top: 10px; /* Adjust this value to shift the image more or less */
+      padding-bottom: var(--size-9);
+      gap: var(--size-8);
   }
 
   main {
@@ -47,6 +41,9 @@
   @media (max-width: 768px) {
       h1 {
          display: none;
+      }
+      header {
+        gap: unset;
       }
   }
 </style>
