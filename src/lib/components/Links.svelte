@@ -6,7 +6,9 @@
   <ul class="desktop">
     {#each linkData as { icon, description, url, display }}
       <li>
-        <span>{icon} {description}</span>
+        <span>
+          <span class="icon">{icon}</span> {description}
+        </span>
         <a
           target="_blank"
           rel="noopener"
@@ -19,7 +21,7 @@
   <ul class="mobile">
     {#each linkData as { icon, description, url, display }}
       <li >
-        <span>{icon}</span>
+        <span class="icon">{icon}</span>
         <a
           target="_blank"
           rel="noopener"
@@ -59,6 +61,11 @@
   
     span {
       margin-right: var(--size-7);
+    }
+
+    .icon {
+      margin-right: var(--size-2);
+      font-size: var(--size-3);
     }
 
     .mobile {

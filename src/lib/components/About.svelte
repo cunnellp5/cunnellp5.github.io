@@ -40,6 +40,10 @@
         text-align: left;
     }
 
+    .bio-icon {
+        font-size: var(--size-3);
+    }
+
     small{
         font-family: var(--font-mono);
         font-size: 70%;
