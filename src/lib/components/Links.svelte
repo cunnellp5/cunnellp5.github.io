@@ -40,7 +40,7 @@
         display: flex;
         justify-content: space-between;
         list-style: none;
-        margin: var(--size-2);
+        margin-block: var(--size-2);
     }
 
     a {
@@ -56,7 +56,7 @@
     }
   
     span {
-        margin-inline: var(--size-7);
+      margin-right: var(--size-7);
     }
 
     .mobile {

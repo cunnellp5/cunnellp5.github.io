@@ -4,23 +4,23 @@
 
 <article class="bio">
     {#each aboutData as { icon, yearSpan, descriptor, description, languages }}
-        <div class="lifeChunks">
-            <p>
-                <span class="bio-icon">{icon}</span>
-                <small class="service">
-                    &nbsp;{yearSpan}
-                    <span> - {descriptor}</span>
-                </small>
+    <div class="lifeChunks">
+        <p>
+            <span class="bio-icon">{icon}</span>
+            <small class="service">
+                &nbsp;{yearSpan}
+                <span> - {descriptor}</span>
+            </small>
+        </p>
+        <div class="bottomParts">
+            <p class="describe">
+                {description}
             </p>
-            <div class="bottomParts">
-                <p class="describe">
-                    {description}
-                </p>
-                {#if languages}
-                    <small class="languages">{languages.join(' - ')}</small>
-                {/if}
-            </div>
+            {#if languages}
+            <small class="languages">{languages.join(' - ')}</small>
+            {/if}
         </div>
+    </div>
     {/each}
 </article>
 
@@ -37,7 +37,6 @@
     .bio {
         display: grid;
         gap: var(--size-4);
-        padding: var(--size-7);
         text-align: left;
     }
 
