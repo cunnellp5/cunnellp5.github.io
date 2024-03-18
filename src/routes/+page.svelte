@@ -18,7 +18,7 @@
 <style>
   header {
       display: grid;
-      grid-template-columns: auto auto;;
+      grid-template-columns: auto auto;
       place-content: center;
       align-items: center;
       gap: var(--size-7);  

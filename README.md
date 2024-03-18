@@ -2,7 +2,7 @@
 
 - 💻 [This Website](philcunnell.dev)
 - 📺 [Animations playground](animations.philcunnell.dev)
-- 👾 [Github](github.com/cunnellp5)
+- 🐙 [Github](github.com/cunnellp5)
 - 📄 [LinkedIn](www.linkedin.com/in/philip-cunnell/)
 - 🥷 [Codewars](www.codewars.com/users/cunnellp5)
 - 👹 [Exercism](exercism.org/profiles/cunnellp5)
