@@ -6,7 +6,7 @@ export const linkData = [
 		display: 'animations.philcunnell.dev'
 	},
 	{
-		icon: '👾',
+		icon: '🐙',
 		description: 'Github',
 		url: 'https://github.com/cunnellp5',
 		display: 'github.com/cunnellp5'
