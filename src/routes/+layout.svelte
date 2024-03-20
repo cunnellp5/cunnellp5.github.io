@@ -16,20 +16,14 @@
 <div class="layout">
     <Header></Header>
 
-    <main>
-        <PageTransition url={data.url}>
-            <slot></slot>
-        </PageTransition>
-    </main>
-    
+    <PageTransition url={data.url}>
+        <slot></slot>
+    </PageTransition>
+
     <Footer></Footer>
 </div>
 
 <style>
-    main {
-        padding-block: var(--size-9);
-    }
-    
     .layout {
         height: 100%;
         max-inline-size: var(--size-xl);
