@@ -5,18 +5,22 @@
 
 <footer>
     <p>
-        &copy; <span id="year">{new Date().getFullYear()}</span>
-        {title}.
+        <span class="copyText">
+            &copy; <span id="year">{new Date().getFullYear()}</span>
+        </span>
         <a target="_blank" rel="noopener" href="humans.txt" class="footer-link">
-            Created with
-            <SkullIcon size=16/>
+            Created with extreme danger&nbsp;
+            <SkullIcon size=12/>
         </a>
     </p>
+    <span class="title">
+        {title}
+    </span>
 </footer>
 
 <style>
     footer {
-        padding-block: var(--size-7);
+        padding-block: var(--size-3);
         border-top: 1px solid var(--border);
         display: grid;
         place-content: center;
@@ -29,5 +33,15 @@
 
     a {
         display: inline-flex;
+    }
+
+    .title {
+        color: var(--text-1);
+        margin-inline: var(--size-1);
+        letter-spacing: var(--size-2);
+    }
+
+    .copyText {
+        color: var(--text-2);
     }
 </style>
