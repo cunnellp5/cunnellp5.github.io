@@ -24,8 +24,8 @@
         emailButton.focus();
     });
 
-    console.log('Sorry for overwriting key down events');
-    console.log('Click anywhere to unfocus');
+    console.info('Sorry for overwriting keydown events');
+    console.info('Click anywhere to unfocus');
 </script>
 
 <article>
@@ -58,7 +58,7 @@
             <button>
                 <Download />
                 <a href="/PhilipCunnellResume2.pdf" download="philip-cunnell-resume-{new Date().getFullYear()}">
-                    Download Resume
+                    Download
                 </a>
             </button>
         </small>
