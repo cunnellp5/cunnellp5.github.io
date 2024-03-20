@@ -2,23 +2,25 @@
     export let url: string;
 </script>
 
-<div class="clipper">
+<div class="clipper background">
     <img src={url} alt="Philip Cunnell">
 </div>
 
 <style>
-
-  .clipper {
-      width: var(--size-11);
-      height: var(--size-11);
-      border-radius: 50%;
-      overflow: hidden;
-  }
-  img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: relative;
-  }
-
+    .background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        opacity: .1;
+        z-index: -1;
+    }
+    
+    img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: relative;
+    }
 </style>
