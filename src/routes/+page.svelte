@@ -5,44 +5,42 @@
 
 <article>
   <header>
-    <h1 class="header-text">I'm Phil</h1>
+    <h1>Phil</h1>
+    <div style="margin-inline: 1rem; border-left: 1px solid rgb(207, 207, 207); height: 40px"></div>
+    <small style="font-weight: 800; font-size: 20px">Developer.</small>
     <GlitchImage url="/images/phil-mosh2.gif" />
   </header>
 
-  <main>
+  <section>
     <Links></Links>
-  </main>
+  </section>
 </article>
 
 <style>
   article {
-        display: grid;
-        place-content: center;
+    display: grid;
+    place-items: center;
   }
-
-  .header-text {
-      font-family: var(--font-serif);
-  }
-
+  
   header {
-      display: grid;
-      grid-template-columns: auto auto;
-      align-items: center;
-      padding-bottom: var(--size-9);
-      gap: var(--size-8);
+    height: 100vh;
+    padding-bottom: var(--size-12);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'system-ui', sans-serif;
   }
 
-  main {
-      display: grid;
-      place-content: center;
+  section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
   }
 
   @media (max-width: 768px) {
-      h1 {
-         display: none;
-      }
-      header {
-        gap: unset;
-      }
+    header {
+      padding-bottom: var(--size-15);
+    }
   }
 </style>

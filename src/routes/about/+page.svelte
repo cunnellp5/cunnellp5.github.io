@@ -4,20 +4,16 @@
 </script>
 
 <article>
-    <header>
-        <h1 class="header-text">About</h1>
         <GlitchImage url="/images/phil-moshed4.gif" />
-    </header>
-
     <section>
-        <h2>Coding</h2>
-        <About></About>
+        <h1>History</h1>
+        <div style="margin-inline: 1rem; border-left: 1px solid rgb(207, 207, 207); height: 40px"></div>
+        <small style="font-weight: 800; font-size: 20px">of code.</small>
     </section>
 
-    <!-- <section>
-        <h2>something else</h2>
+    <section>
         <About></About>
-    </section> -->
+    </section>
 </article>
 
 <style>
@@ -26,38 +22,21 @@
         place-content: center;
     }
 
-    .header-text {
-        font-family: var(--font-serif);
-    }
-
-    header {
-        display: grid;
-        grid-template-columns: auto auto;
-        /* place-content: center; */
-        align-items: center;
-        padding-bottom: var(--size-9);
-        gap: var(--size-8);
-    }
-
     h1 {
-        font-family: var(--font-mono);
+        font-family: 'system-ui', sans;
     }
-    
-    h2 {
-        padding-bottom: var(--size-7);
-    }
-    
+
     section {
-        padding-bottom: var(--size-9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding-bottom: var(--size-12);
     }
 
     @media (max-width: 768px) {
-      h1 {
-         display: none;
+      section {
+        padding-bottom: var(--size-15);
       }
-      header {
-        gap: unset;
-        place-content: center;
-      }
-  }
+    }
 </style>

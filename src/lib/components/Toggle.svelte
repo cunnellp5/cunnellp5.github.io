@@ -6,27 +6,25 @@
 </script>
 
 <div class="options">
-    <button on:click={toggleMouse} aria-label="Toggle mouse">
+    <button class="mouse" on:click={toggleMouse} aria-label="Toggle mouse">
         {#if $mouse === 'on'}
             <div in:fly={{ y: 10 }}>
-                <MousePointer />
+                <MousePointer strokeWidth="1"/>
             </div>
             {:else}
             <div in:fly={{ y: -10 }}>
-                <Heart />
+                <Heart strokeWidth="1"/>
             </div>
         {/if}
     </button>
     <button on:click={toggleTheme} aria-label="Toggle theme">
         {#if $theme === 'dark'}
             <div in:fly={{ y: 10 }}>
-                <Sun />
-                <span>Light</span>
+                <Sun strokeWidth="1"/>
             </div>
         {:else}
             <div in:fly={{ y: -10 }}>
-                <Moon />
-                <span>Dark</span>
+                <Moon strokeWidth="1"/>
             </div>
         {/if}
     </button>
@@ -40,11 +38,17 @@
         border: none;
         box-shadow: none;
         overflow: hidden;
-        margin-inline: var(--size-2);
+        margin-inline: var(--size-1);
     }
 
     button > * {
         display: flex;
         gap: var(--size-2);
+    }
+
+    @media (max-width: 768px) {
+        .mouse {
+            display: none;
+        }
     }
 </style>
