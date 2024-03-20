@@ -1,6 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import { Download, Copy, CopyCheckIcon } from 'lucide-svelte'
+    import GlitchImage from '$lib/components/GlitchImage.svelte';
 
     let email = 'philip.cunnell@colorado.edu'
     let copied = false;
@@ -28,6 +29,7 @@
 </script>
 
 <article>
+    <GlitchImage url="/images/phil-mosh5.gif" />
     <section class="sectionText">
         <h1>Contact</h1>
         <div class="divider" style="margin-inline: 1rem; border-left: 1px solid rgb(207, 207, 207); height: 40px"></div>
