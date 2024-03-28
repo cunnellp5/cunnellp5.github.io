@@ -61,11 +61,11 @@ html {
 	}
 }
 
-[mouse-cursor='off'] {
+[mouse-cursor='on'] {
 	cursor: default;
 }
 
-[mouse-cursor='on'] {
+[mouse-cursor='off'] {
 	cursor: url('https://fav.farm/🫶'), auto;
 }
 
