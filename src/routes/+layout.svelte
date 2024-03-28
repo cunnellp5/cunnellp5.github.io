@@ -1,41 +1,41 @@
 <script lang="ts">
-    import Header from '$lib/components/Header.svelte';
-    import Footer from '$lib/components/Footer.svelte';
-    import PageTransition from '$lib/components/PageTransition.svelte';
+	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import PageTransition from '$lib/components/PageTransition.svelte';
 
-    import 'open-props/style';
-    import 'open-props/normalize';
-    import 'open-props/buttons';
-    
-    import '$lib/styles/rainbowbar.css';
-    import '$lib/styles/app.css';
+	import 'open-props/style';
+	import 'open-props/normalize';
+	import 'open-props/buttons';
 
-    export let data
+	import '$lib/styles/rainbowbar.css';
+	import '$lib/styles/app.css';
+
+	export let data;
 </script>
- 
+
 <div class="layout">
-    <Header></Header>
+	<Header></Header>
 
-    <PageTransition url={data.url}>
-        <slot></slot>
-    </PageTransition>
+	<PageTransition url={data.url}>
+		<slot />
+	</PageTransition>
 
-    <Footer></Footer>
+	<Footer></Footer>
 </div>
 
 <style>
-    .layout {
-        height: 100%;
-        max-inline-size: var(--size-xl);
-        display: grid;
-        grid-template-rows: auto 1fr auto;
-        margin-inline: auto;
-        padding-inline: var(--size-7);
-    }
+	.layout {
+		height: 100%;
+		max-inline-size: var(--size-xl);
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		margin-inline: auto;
+		padding-inline: var(--size-7);
+	}
 
-    @media (min-width: 1440px) {
-        .layout {
-            padding-inline: 0;
-        }
-    }
+	@media (min-width: 1440px) {
+		.layout {
+			padding-inline: 0;
+		}
+	}
 </style>
