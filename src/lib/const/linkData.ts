@@ -6,6 +6,12 @@ export const linkData = [
 		display: 'animations.philcunnell.dev'
 	},
 	{
+		icon: '🥽',
+		description: 'MiniApps',
+		url: 'https://minis.philcunnell.dev',
+		display: 'minis.philcunnell.dev'
+	},
+	{
 		icon: '🐙',
 		description: 'Github',
 		url: 'https://github.com/cunnellp5',
