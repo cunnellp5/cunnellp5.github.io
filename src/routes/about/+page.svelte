@@ -7,8 +7,6 @@
 	<GlitchImage url="/images/phil-moshed4.gif" />
 	<section>
 		<h1>History</h1>
-		<div style="margin-inline: 1rem; border-left: 1px solid rgb(207, 207, 207); height: 40px"></div>
-		<small style="font-weight: 800; font-size: 20px">of code.</small>
 	</section>
 
 	<section>
@@ -30,13 +28,12 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 100vh;
-		padding-bottom: var(--size-12);
+		padding-block: var(--size-7);
 	}
 
 	@media (max-width: 768px) {
 		section {
-			padding-bottom: var(--size-15);
+			padding-block: var(--size-8);
 		}
 	}
 </style>
