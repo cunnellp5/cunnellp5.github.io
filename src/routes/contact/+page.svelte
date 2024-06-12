@@ -52,7 +52,7 @@
 	</section>
 
 	<section class="sectionText">
-		<h1>Resume</h1>
+		<h2>Resume</h2>
 		<div
 			class="divider"
 			style="margin-inline: 1rem; border-left: 1px solid rgb(207, 207, 207); height: 40px"
@@ -72,9 +72,14 @@
 </article>
 
 <style>
+	article {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+	}
 	section {
-		height: 100vh;
-		padding-bottom: var(--size-12);
+		padding-block: var(--size-7);
 	}
 
 	.sectionText {
@@ -113,10 +118,6 @@
 
 		.sectionText {
 			flex-direction: column;
-		}
-
-		section {
-			padding-bottom: var(--size-15);
 		}
 	}
 </style>
