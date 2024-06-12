@@ -3,12 +3,11 @@
 </script>
 
 <article>
-	<h3>All links</h3>
 	<ul class="desktop">
 		{#each linkData as { icon, description, url, display }}
 			<li>
 				<span class="description">
-					<span class="icon">{icon}</span>
+					<!-- <span class="icon">{icon}</span> -->
 					{description}
 				</span>
 				<a target="_blank" rel="noopener" href={url}>
@@ -20,7 +19,7 @@
 	<ul class="mobile">
 		{#each linkData as { icon, description, url, display }}
 			<li>
-				<span class="icon">{icon}</span>
+				<!-- <span class="icon">{icon}</span> -->
 				<a class="description" target="_blank" rel="noopener" href={url}>
 					{description}
 				</a>
@@ -30,19 +29,11 @@
 </article>
 
 <style>
-	h3 {
-		padding-bottom: var(--size-4);
-	}
-
-	ul {
-		padding: unset;
-	}
-
 	li {
 		display: flex;
 		justify-content: space-between;
 		list-style: none;
-		margin-block: var(--size-4);
+		margin-block: var(--size-1);
 	}
 
 	a {
@@ -66,13 +57,13 @@
 
 	.description {
 		font-variant: small-caps;
-		letter-spacing: 4px;
+		letter-spacing: 2px;
 	}
 
-	.icon {
+	/* .icon {
 		margin-right: var(--size-0);
 		font-size: var(--size-3);
-	}
+	} */
 
 	.mobile {
 		display: none;
@@ -95,8 +86,8 @@
 			display: block;
 		}
 
-		.icon {
+		/* .icon {
 			margin-right: var(--size-3);
-		}
+		} */
 	}
 </style>
