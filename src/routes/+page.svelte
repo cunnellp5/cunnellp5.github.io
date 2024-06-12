@@ -7,7 +7,7 @@
 	<header>
 		<h1>Phil</h1>
 		<div style="margin-inline: 1rem; border-left: 1px solid rgb(207, 207, 207); height: 40px"></div>
-		<small style="font-weight: 800; font-size: 20px">Developer.</small>
+		<small style="font-weight: 600; font-size: 20px">Full-Stack JavaScript Developer.</small>
 		<GlitchImage url="/images/phil-mosh2.gif" />
 	</header>
 
@@ -23,9 +23,7 @@
 	}
 
 	header {
-		height: 100vh;
-		padding-bottom: var(--size-12);
-		width: 100%;
+		padding-block: var(--size-13);
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -33,14 +31,14 @@
 	}
 
 	section {
-		height: 100vh;
+		height: 80vh;
 		display: flex;
-		align-items: center;
+		/* align-items: center; */
 	}
 
 	@media (max-width: 768px) {
 		header {
-			padding-bottom: var(--size-15);
+			/* padding-bottom: var(--size-15); */
 		}
 	}
 </style>
