@@ -13,7 +13,7 @@
 		top: 0;
 		height: 100vh;
 		width: 100vw;
-		opacity: 0.1;
+		opacity: 0.01;
 		z-index: -1;
 	}
 
