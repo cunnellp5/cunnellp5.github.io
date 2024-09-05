@@ -20,25 +20,13 @@
 	article {
 		display: grid;
 		place-items: center;
+		height: 80vh;
 	}
 
 	header {
-		padding-block: var(--size-13);
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		font-family: 'system-ui', sans-serif;
-	}
-
-	section {
-		height: 80vh;
-		display: flex;
-		/* align-items: center; */
-	}
-
-	@media (max-width: 768px) {
-		header {
-			/* padding-bottom: var(--size-15); */
-		}
 	}
 </style>

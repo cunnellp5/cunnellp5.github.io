@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { title } from '$lib/config';
-	import { SkullIcon } from 'lucide-svelte';
 </script>
 
 <footer>
@@ -8,10 +7,7 @@
 		<span class="copyText">
 			&copy; <span id="year">{new Date().getFullYear()}</span>
 		</span>
-		<a target="_blank" rel="noopener" href="humans.txt" class="footer-link">
-			Created with extreme danger&nbsp;
-			<SkullIcon size="12" />
-		</a>
+		<a target="_blank" rel="noopener" href="humans.txt" class="footer-link"> humans.txt </a>
 	</p>
 	<span class="title">
 		{title}
@@ -38,7 +34,7 @@
 	.title {
 		color: var(--text-1);
 		margin-inline: var(--size-1);
-		letter-spacing: var(--size-2);
+		/* letter-spacing: var(--size-2); */
 	}
 
 	.copyText {

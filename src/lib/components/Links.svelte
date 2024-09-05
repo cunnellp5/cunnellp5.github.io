@@ -4,10 +4,20 @@
 
 <article>
 	<ul class="desktop">
-		{#each linkData as { icon, description, url, display }}
+		<li>
+			<span class="description"> TheRiverSings </span>
+			<a target="_blank" rel="noopener" href="https://theriversings.com"> theriversings.com </a>
+		</li>
+	</ul>
+	<ul class="mobile">
+		<li>
+			<a target="_blank" rel="noopener" href="https://theriversings.com"> theriversings.com </a>
+		</li>
+	</ul>
+	<ul class="desktop">
+		{#each linkData as { description, url, display }}
 			<li>
 				<span class="description">
-					<!-- <span class="icon">{icon}</span> -->
 					{description}
 				</span>
 				<a target="_blank" rel="noopener" href={url}>
@@ -17,9 +27,8 @@
 		{/each}
 	</ul>
 	<ul class="mobile">
-		{#each linkData as { icon, description, url, display }}
+		{#each linkData as { description, url }}
 			<li>
-				<!-- <span class="icon">{icon}</span> -->
 				<a class="description" target="_blank" rel="noopener" href={url}>
 					{description}
 				</a>
@@ -60,11 +69,6 @@
 		letter-spacing: 2px;
 	}
 
-	/* .icon {
-		margin-right: var(--size-0);
-		font-size: var(--size-3);
-	} */
-
 	.mobile {
 		display: none;
 	}
@@ -85,9 +89,5 @@
 		.mobile {
 			display: block;
 		}
-
-		/* .icon {
-			margin-right: var(--size-3);
-		} */
 	}
 </style>

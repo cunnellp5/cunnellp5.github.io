@@ -31,7 +31,7 @@
 <article>
 	<GlitchImage url="/images/phil-mosh5.gif" />
 	<section class="sectionText">
-		<h1>Contact</h1>
+		<h2>Contact</h2>
 		<div
 			class="divider"
 			style="margin-inline: 1rem; border-left: 1px solid rgb(207, 207, 207); height: 40px"
@@ -40,8 +40,10 @@
 			<div class="email-group">
 				<button bind:this={emailButton} on:click={copy} on:keydown|preventDefault={handleKeyDown}>
 					{#if copied}
-						Copied to clipboard <CopyCheckIcon />
+						<CopyCheckIcon />
+						<p>Copied to clipboard</p>
 					{:else}
+						<Copy />
 						<p>
 							{email}
 						</p>
@@ -61,7 +63,7 @@
 			<button>
 				<Download />
 				<a
-					href="/PhilipCunnellResume2.pdf"
+					href="/PhilipCunnellResume.pdf"
 					download="philip-cunnell-resume-{new Date().getFullYear()}"
 				>
 					Download
@@ -77,15 +79,17 @@
 		flex-direction: column;
 		height: 100%;
 		justify-content: center;
+		margin: 0 auto;
+		width: fit-content;
 	}
 	section {
-		padding-block: var(--size-7);
+		padding-block: var(--size-4);
 	}
 
 	.sectionText {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		/* justify-content: center; */
 		font-family: 'system-ui', sans-serif;
 	}
 
@@ -95,6 +99,7 @@
 	}
 
 	p {
+		display: inline-block;
 		color: var(--indigo-1);
 		text-shadow:
 			0 0 10px var(--indigo-5),
