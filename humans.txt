@@ -4,9 +4,9 @@
 |  __/|  _  || || |___
 |_|   |_| |_|___|_____|
 
-_______________________________________________________________________________
+_______________________
 
-DESIGNER
+TEAM
 
 Philip Cunnell
 Homemade design & web development
@@ -17,17 +17,12 @@ github.com/cunnellp5
 philcunnell.dev
 animations.philcunnell.dev
 
-
-_______________________________________________________________________________
-
 TECHNOLOGY (WIP)
 
 SvelteKit
 TypeScript
 HTML
 CSS
-
-_______________________________________________________________________________
 
 FONTS
 
