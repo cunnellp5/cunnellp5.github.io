@@ -16,10 +16,9 @@
 
 <style>
 	footer {
+		margin: 0 auto;
+		place-items: center;
 		padding-block: var(--size-3);
-		border-top: 1px solid var(--border);
-		display: grid;
-		place-content: center;
 	}
 
 	p {
@@ -39,5 +38,15 @@
 
 	.copyText {
 		color: var(--text-2);
+	}
+
+	@media (min-width: 768px) {
+		footer {
+			width: var(--size-md);
+			margin: 0 auto;
+			place-items: center;
+			padding-block: var(--size-3);
+			border-top: 1px solid var(--border);
+		}
 	}
 </style>
