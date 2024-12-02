@@ -1,12 +1,11 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import Toggle from './Toggle.svelte';
 </script>
 
 <nav>
 	<ul class="links">
 		<li>
-			<a href="{base}/"> &lt;P.C.&gt; </a>
+			<a href="{base}/"> Home </a>
 		</li>
 	</ul>
 
@@ -18,8 +17,6 @@
 			<a href="{base}/contact"> Contact </a>
 		</li>
 	</ul>
-
-	<Toggle />
 </nav>
 
 <style>
@@ -46,7 +43,6 @@
 		text-shadow:
 			0 0 10px var(--indigo-5),
 			0 0 25px var(--indigo-7);
-		/* animation: var(--animation-blink); */
 	}
 
 	@media (min-width: 768px) {
