@@ -1,53 +1,73 @@
 <script>
 	import { linkData } from '$lib/const/linkData';
+	import { linkDataProj } from '$lib/const/linkDataProj';
 </script>
 
 <article>
-	<ul class="desktop">
-		<li>
-			<span class="description"> TheRiverSings </span>
-			<a target="_blank" rel="noopener" href="https://theriversings.com"> theriversings.com </a>
-		</li>
-	</ul>
-	<ul class="mobile">
-		<li>
-			<a target="_blank" rel="noopener" href="https://theriversings.com"> theriversings.com </a>
-		</li>
-	</ul>
-	<ul class="desktop">
-		{#each linkData as { description, url, display }}
+	<div>
+		<h6>Freelanced:</h6>
+		<ul>
 			<li>
-				<span class="description">
-					{description}
-				</span>
-				<a target="_blank" rel="noopener" href={url}>
-					{display}
+				<a class="description" target="_blank" rel="noopener" href="https://theriversings.com">
+					TheRiverSings.com
 				</a>
 			</li>
-		{/each}
-	</ul>
-	<ul class="mobile">
-		{#each linkData as { description, url }}
-			<li>
-				<a class="description" target="_blank" rel="noopener" href={url}>
-					{description}
-				</a>
-			</li>
-		{/each}
-	</ul>
+		</ul>
+	</div>
+
+	<div>
+		<h6>Projects:</h6>
+		<ul class="links">
+			{#each linkDataProj as { description, url }}
+				<li>
+					<a class="description" target="_blank" rel="noopener" href={url}>
+						{description}
+					</a>
+				</li>
+			{/each}
+		</ul>
+	</div>
+
+	<div>
+		<h6>Other:</h6>
+		<ul class="links">
+			{#each linkData as { description, url }}
+				<li>
+					<a class="description" target="_blank" rel="noopener" href={url}>
+						{description}
+					</a>
+				</li>
+			{/each}
+		</ul>
+	</div>
 </article>
 
 <style>
+	div {
+		margin-block: var(--size-11);
+	}
 	li {
-		display: flex;
-		justify-content: space-between;
-		list-style: none;
-		margin-block: var(--size-1);
+		margin: var(--size-3);
+		background: var(--surface-3);
+		padding-inline: var(--size-7);
+		padding-block: var(--size-3);
+		border-radius: var(--radius-3);
+		text-align: center;
+	}
+
+	h6 {
+		opacity: 0.3;
+		font-weight: var(--font-weight-1);
 	}
 
 	a {
 		text-decoration: none;
 		color: (--var-indigo-1);
+	}
+
+	.links {
+		display: flex;
+		flex-flow: row wrap;
 	}
 
 	a:hover {
@@ -60,34 +80,14 @@
 		animation: var(--animation-blink);
 	}
 
-	span {
-		margin-right: var(--size-7);
-	}
-
 	.description {
 		font-variant: small-caps;
 		letter-spacing: 2px;
 	}
 
-	.mobile {
-		display: none;
-	}
-
 	@media (max-width: 768px) {
 		li {
 			justify-content: unset;
-		}
-
-		span {
-			margin-inline: var(--size-2);
-		}
-
-		.desktop {
-			display: none;
-		}
-
-		.mobile {
-			display: block;
 		}
 	}
 </style>

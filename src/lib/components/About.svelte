@@ -3,21 +3,24 @@
 </script>
 
 <article class="bio">
-	{#each aboutData as { icon, yearSpan, descriptor, description, languages }}
-		<div class="lifeChunks">
-			<p>
-				<span class="bio-icon">{icon}</span>
-				<small class="service">
-					&nbsp;{yearSpan}
-					<span> - {descriptor}</span>
-				</small>
-			</p>
-			<div class="bottomParts">
-				<p class="describe">
-					{description}
+	{#each aboutData as { yearSpan, descriptor, description, languages }}
+		<div class="info">
+			<h3>{yearSpan}</h3>
+			<div class="data">
+				<div class="margin-block">
+					<p class="yellow">Description:</p>
+					<p>
+						{description}
+					</p>
+				</div>
+
+				<p class="small-text">
+					<span class="yellow2">Type:</span>
+					{descriptor}
 				</p>
+				<!-- <p class="service">{descriptor}</p> -->
 				{#if languages}
-					<small class="languages">{languages.join(' - ')}</small>
+					<p class="languages bottomParts">Tech: {languages.join(' - ')}</p>
 				{/if}
 			</div>
 		</div>
@@ -25,43 +28,48 @@
 </article>
 
 <style>
-	.describe,
-	.languages {
-		margin-inline: var(--size-7);
+	h3 {
+		margin-block: var(--size-4);
 	}
-
+	p {
+		font-size: var(--font-size-1);
+	}
+	.margin-block {
+		margin-block: var(--size-4);
+	}
 	.languages {
 		color: var(--text-2);
 		opacity: 0.5;
+		font-size: var(--font-size-0);
 	}
 
 	.bio {
 		display: grid;
+		grid-template-columns: 1fr;
 		gap: var(--size-4);
 		text-align: left;
+		/* flex-direction: column; */
 	}
-
-	.bio-icon {
-		font-size: var(--size-3);
-	}
-
-	small {
-		font-family: var(--font-mono);
-		font-size: 70%;
-	}
-
-	.service {
-		color: var(--text-2);
-	}
-
-	.lifeChunks {
-		line-height: 1.3;
+	.info {
 		/* display: grid; */
+		/* gap: var(--size-5); */
+		margin-block-end: var(--size-7);
 	}
 
 	.bottomParts {
 		display: grid;
-		gap: var(--size-2);
 		white-space: nowrap;
+	}
+	.yellow {
+		margin-block-end: var(--size-2);
+		font-size: var(--font-size-3);
+		color: var(--yellow-3);
+	}
+	.yellow2 {
+		color: var(--indigo-3);
+	}
+	.small-text {
+		margin-block-end: var(--size-1);
+		font-size: var(--font-size-0);
 	}
 </style>
