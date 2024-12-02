@@ -1,10 +1,8 @@
 <script>
 	import About from '$lib/components/About.svelte';
-	import GlitchImage from '$lib/components/GlitchImage.svelte';
 </script>
 
 <article>
-	<GlitchImage url="/images/phil-moshed4.gif" />
 	<section>
 		<h1>History</h1>
 	</section>
@@ -18,10 +16,6 @@
 	article {
 		display: grid;
 		place-content: center;
-	}
-
-	h1 {
-		font-family: 'system-ui', sans;
 	}
 
 	section {

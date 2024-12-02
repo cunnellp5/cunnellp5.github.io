@@ -1,7 +1,10 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { Download, Copy, CopyCheckIcon } from 'lucide-svelte';
-	import GlitchImage from '$lib/components/GlitchImage.svelte';
+	import {
+		// Download,
+		Copy,
+		CopyCheckIcon
+	} from 'lucide-svelte';
 
 	let email = 'philip.cunnell@colorado.edu';
 	let copied = false;
@@ -16,29 +19,17 @@
 		}, 1000);
 	}
 
-	function handleKeyDown() {
-		copy();
-	}
-
 	onMount(() => {
 		emailButton.focus();
 	});
-
-	console.info('Sorry for overwriting keydown events');
-	console.info('Click anywhere to unfocus');
 </script>
 
 <article>
-	<GlitchImage url="/images/phil-mosh5.gif" />
 	<section class="sectionText">
 		<h2>Contact</h2>
-		<div
-			class="divider"
-			style="margin-inline: 1rem; border-left: 1px solid rgb(207, 207, 207); height: 40px"
-		></div>
 		<small style="font-weight: 800; font-size: 20px">
 			<div class="email-group">
-				<button bind:this={emailButton} on:click={copy} on:keydown|preventDefault={handleKeyDown}>
+				<button bind:this={emailButton} on:click={copy}>
 					{#if copied}
 						<CopyCheckIcon />
 						<p>Copied to clipboard</p>
@@ -53,7 +44,7 @@
 		</small>
 	</section>
 
-	<section class="sectionText">
+	<!-- <section class="sectionText">
 		<h2>Resume</h2>
 		<div
 			class="divider"
@@ -70,17 +61,16 @@
 				</a>
 			</button>
 		</small>
-	</section>
+	</section> -->
 </article>
 
 <style>
 	article {
 		display: flex;
 		flex-direction: column;
-		height: 100%;
 		justify-content: center;
 		margin: 0 auto;
-		width: fit-content;
+		/* width: fit-content; */
 	}
 	section {
 		padding-block: var(--size-4);
@@ -88,8 +78,8 @@
 
 	.sectionText {
 		display: flex;
-		align-items: center;
-		/* justify-content: center; */
+		flex-direction: column;
+		gap: var(--size-5);
 		font-family: 'system-ui', sans-serif;
 	}
 
@@ -114,15 +104,5 @@
 			0 0 25px var(--indigo-7);
 		animation: var(--animation-blink);
 		cursor: pointer;
-	}
-
-	@media (max-width: 768px) {
-		.divider {
-			display: none;
-		}
-
-		.sectionText {
-			flex-direction: column;
-		}
 	}
 </style>

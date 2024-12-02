@@ -1,14 +1,24 @@
 <script>
 	import Links from '../lib/components/Links.svelte';
-	import GlitchImage from '../lib/components/GlitchImage.svelte';
+	const random = Math.floor(Math.random() * 4);
+	const glitchImages = [
+		'/images/phil-mosh2.gif',
+		'/images/phil-mosh5.gif',
+		'/images/phil-moshed4.gif',
+		'/images/me.webp'
+	];
 </script>
 
 <article>
 	<header>
-		<h1>Phil</h1>
-		<div style="margin-inline: 1rem; border-left: 1px solid rgb(207, 207, 207); height: 40px"></div>
-		<small style="font-weight: 600; font-size: 20px">Full-Stack JavaScript Developer.</small>
-		<GlitchImage url="/images/phil-mosh2.gif" />
+		<div class="clipper background">
+			<img height="200px" width="200px" src={glitchImages[random]} alt="Philip Cunnell" />
+		</div>
+
+		<div class="title-text-wrapper">
+			<h1>Phil</h1>
+			<small style="font-weight: 600; font-size: 20px">Software Developer.</small>
+		</div>
 	</header>
 
 	<section>
@@ -20,12 +30,13 @@
 	article {
 		display: grid;
 		place-items: center;
-		height: 80vh;
 	}
 
 	header {
+		margin-block: var(--size-10);
 		display: flex;
 		align-items: center;
+		gap: var(--size-5);
 		justify-content: center;
 		font-family: 'system-ui', sans-serif;
 	}
