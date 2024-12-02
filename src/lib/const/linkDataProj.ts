@@ -1,34 +1,34 @@
-export const linkData = [
-	// {
-	// 	icon: '🧶',
-	// 	description: 'Animations',
-	// 	url: 'https://animations.philcunnell.dev',
-	// 	display: 'animations.philcunnell.dev'
-	// },
-	// {
-	// 	icon: '🥽',
-	// 	description: 'MiniApps',
-	// 	url: 'https://minis.philcunnell.dev',
-	// 	display: 'minis.philcunnell.dev'
-	// },
+export const linkDataProj = [
 	{
-		icon: '🐙',
-		description: 'Github',
-		url: 'https://github.com/cunnellp5',
-		display: 'github.com/cunnellp5'
+		icon: '🧶',
+		description: 'Animations',
+		url: 'https://animations.philcunnell.dev',
+		display: 'animations.philcunnell.dev'
 	},
+	{
+		icon: '🥽',
+		description: 'MiniApps',
+		url: 'https://minis.philcunnell.dev',
+		display: 'minis.philcunnell.dev'
+	}
+	// {
+	// 	icon: '🐙',
+	// 	description: 'Github',
+	// 	url: 'https://github.com/cunnellp5',
+	// 	display: 'github.com/cunnellp5'
+	// },
 	// {
 	// 	icon: '💻',
 	// 	description: 'Here',
 	// 	url: 'https://philcunnell.dev',
 	// 	display: 'philcunnell.dev'
 	// },
-	{
-		icon: '📄',
-		description: 'LinkedIn',
-		url: 'https://www.linkedin.com/in/philip-cunnell/',
-		display: 'linkedin.com/in/philip-cunnell/'
-	}
+	// {
+	// 	icon: '📄',
+	// 	description: 'LinkedIn',
+	// 	url: 'https://www.linkedin.com/in/philip-cunnell/',
+	// 	display: 'linkedin.com/in/philip-cunnell/'
+	// }
 	// {
 	// 	icon: '🥷',
 	// 	description: 'Codewars',

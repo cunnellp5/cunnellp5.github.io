@@ -32,8 +32,6 @@ html {
 :root {
 	color-scheme: dark;
 
-	cursor: url('https://fav.farm/🫶'), auto;
-
 	--brand: var(--brand-dark);
 	--text-1: var(--text-1-dark);
 	--text-2: var(--text-2-dark);
@@ -59,14 +57,6 @@ html {
 		--background: var(--background-light);
 		--border: var(--border-light);
 	}
-}
-
-[mouse-cursor='on'] {
-	cursor: default;
-}
-
-[mouse-cursor='off'] {
-	cursor: url('https://fav.farm/🫶'), auto;
 }
 
 [color-scheme='dark'] {
@@ -105,7 +95,10 @@ body {
 html {
 	color: var(--text-1);
 	accent-color: var(--link);
-	background-image: var(--background);
+	/* background-image: var(--background); */
+	/* background-attachment: fixed; */
+	background: url(https://github.com/misalagp/imgs/blob/main/noise.png?raw=true),
+		radial-gradient(at top, #688d68 -90%, #111 100%);
 	background-attachment: fixed;
 }
 

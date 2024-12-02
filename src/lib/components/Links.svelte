@@ -44,7 +44,7 @@
 
 <style>
 	div {
-		margin-block: var(--size-11);
+		margin-block: var(--size-7);
 	}
 	li {
 		margin: var(--size-3);
