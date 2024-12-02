@@ -9,20 +9,6 @@
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
-		<script type="module">
-			const theme = localStorage.getItem('color-scheme');
-
-			theme
-				? document.documentElement.setAttribute('color-scheme', theme)
-				: localStorage.setItem('color-scheme', 'dark');
-		</script>
-		<script type="module">
-			const mouseCursor = localStorage.getItem('mouse-cursor');
-
-			mouseCursor
-				? document.documentElement.setAttribute('mouse-cursor', mouseCursor)
-				: localStorage.setItem('mouse-cursor', 'on');
-		</script>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div class="rainbow">
