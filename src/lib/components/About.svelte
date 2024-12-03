@@ -8,19 +8,22 @@
 			<h3>{yearSpan}</h3>
 			<div class="data">
 				<div class="margin-block">
-					<p class="yellow">Description:</p>
 					<p>
+						<span class="yellow">&raquo;</span>
 						{description}
 					</p>
 				</div>
 
-				<p class="small-text">
-					<span class="yellow2">Type:</span>
+				<p class="small-text yellow2">
+					<span class="">Type:</span>
 					{descriptor}
 				</p>
 				<!-- <p class="service">{descriptor}</p> -->
 				{#if languages}
-					<p class="languages bottomParts">Tech: {languages.join(' - ')}</p>
+					<p class="small-text yellow2">
+						<span> Tech: </span>
+						{languages.join(', ')}
+					</p>
 				{/if}
 			</div>
 		</div>
@@ -66,7 +69,7 @@
 		color: var(--yellow-3);
 	}
 	.yellow2 {
-		color: var(--indigo-3);
+		color: var(--gray-6);
 	}
 	.small-text {
 		margin-block-end: var(--size-1);
