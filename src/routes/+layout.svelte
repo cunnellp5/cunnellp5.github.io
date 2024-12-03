@@ -8,11 +8,16 @@
 
 	import '$lib/styles/rainbowbar.css';
 	import '$lib/styles/app.css';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 </script>
 
 <div class="layout">
 	<Header></Header>
-	<slot />
+	{@render children?.()}
 	<Footer></Footer>
 </div>
 

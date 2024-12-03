@@ -1,5 +1,9 @@
 <script lang="ts">
-	export let url: string;
+	interface Props {
+		url: string;
+	}
+
+	let { url }: Props = $props();
 </script>
 
 <div class="clipper background">

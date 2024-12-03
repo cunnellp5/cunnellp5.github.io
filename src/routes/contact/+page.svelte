@@ -7,8 +7,8 @@
 	} from 'lucide-svelte';
 
 	let email = 'philip.cunnell@colorado.edu';
-	let copied = false;
-	let emailButton: HTMLButtonElement;
+	let copied = $state(false);
+	let emailButton: HTMLButtonElement = $state();
 
 	function copy() {
 		navigator.clipboard.writeText(email);
@@ -29,7 +29,7 @@
 		<h2>Contact</h2>
 		<small style="font-weight: 800; font-size: 20px">
 			<div class="email-group">
-				<button bind:this={emailButton} on:click={copy}>
+				<button bind:this={emailButton} onclick={copy}>
 					{#if copied}
 						<CopyCheckIcon />
 						<p>Copied to clipboard</p>
