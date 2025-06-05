@@ -1,0 +1,29 @@
+html {
+    background: url(https://github.com/misalagp/imgs/blob/main/noise.png?raw=true),
+    radial-gradient(at top, #688d68 -9%, #111 100%);
+    background-attachment: fixed;
+    overflow: hidden;
+}
+img {
+    border-radius: 50%;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    color: rgb(80, 59, 62);
+    font-size: 14px;
+    font-family: 'system-ui', sans-serif;
+}
+.listItem {
+    list-style: none;
+}
+.anchor {
+    color: rgb(179, 232, 130);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.anchor:hover {
+    color: #299546;
+}
