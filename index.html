@@ -5,16 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Phil Cunnell - Software Developer</title>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(err => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
+    </script>
 </head>
 <body style="display: flex; flex-direction: column; align-items: center; gap: 10px; height: 100vh; justify-content: center;">
     <div>
         <header style="display: flex; flex-direction: row; align-items: center; gap: 10px">
             <div style="display: flex; flex-direction: row; align-items: center; gap: 10px">
                 <h1>Phil</h1>
-                <small style="font-weight: 600; font-size: 20px">Software Developer.</small>
+                <small style="font-weight: 600; font-size: 20px">Developer</small>
             </div>
         </header>
-
         <main>
             <article>
                 <div>
@@ -26,7 +38,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <div>
                     <ul>
                         <li class="listItem">
@@ -41,7 +52,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <div>
                     <ul>
                         <li class="listItem">
