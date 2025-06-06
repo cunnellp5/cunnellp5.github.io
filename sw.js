@@ -1,1 +1,0 @@
-const CACHE="v1";self.addEventListener("install",e=>{e.waitUntil(caches.open("v1").then(e=>e.addAll(["/","/index.html","/style.css"])))}),self.addEventListener("fetch",e=>{e.respondWith(caches.match(e.request).then(t=>t||fetch(e.request)))});
